@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <div class="container-div">
+        <div class="title-div">
+            <h1 class="main-title">Rock Paper Scissors</h1>
+            <h1 class="sub-title"> With Bot</h1>
+        </div>
+
+
+        <h2>Score</h2>
+        <div class="score-div">
+            <div class="human-score-div" id="humanScore">
+                <h3>Human: 0</h3>
+
+            </div>
+
+            <div class="bot-score-div" id="botScore">
+                <h3>Bot: 0</h3>
+
+            </div>
+
+            <div id="humanChoice"></div>
+            <div id="botChoice"></div>
+
+        </div>
+
+        <div class="result-div" id="result">
+
+        </div>
+
+        <div class="button-div">
+            <div class="action-btns">
+                <button id="rock" onclick="rockChoice()">Rock</button>
+                <button id="paper" onclick="paperChoice()">Paper</button>
+                <button id="scissors" onclick="scissorsChoice()">Scissors</button>
+            </div>
+
+            <div class="reset-btn">
+                <button onclick="resetGame()">Reset</button>
+            </div>
+        </div>
+
+        <div class="footer-div" id="count">
+            <h3>Game Count: 0</h3>
+        </div>
+    </div>
+
+    <script src="./assets/scripts/app.js"></script>
+</body>
+
+</html>
